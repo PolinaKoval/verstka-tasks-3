@@ -6,13 +6,195 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <!-- Поле для фильтрации по городу -->
-        <input
-            type="text"
-            placeholder="Город отправления"
-            value=""
-            onkeyup="this.setAttribute('value', this.value)">
-
-        <!-- Здесь применять вашу самую сильную магию -->
+        <table class="schedule">
+            <thead>
+                <tr>
+                    <th>тип рейса</th>
+                    <th>номер рейса</th>
+                    <th>aвиакомпания</th>
+                    <th>логотип</th>
+                    <th>тип ВС</th>
+                    <th>направление</th>
+                    <th>плановое время <br> вылета/прилёта</th>
+                    <th>терминал</th>
+                    <th>статус рейса</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr value="1">
+                    <td>Вылет</td>
+                    <td>BA-8787</td>
+                    <td>British Airways</td>
+                    <td><a href="www.britishairways.com/" class="britishairways"> </a></td>
+                    <td>A-319</td>
+                    <td>Баку</td>
+                    <td><time datetime="2015-10-18T14:54:39Z">18 Окт 14:54</time></td>
+                    <td>7</td>
+                    <td>регистрация</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>S7-53</td>
+                    <td>Сибирь S7</td>
+                    <td><a href="http://www.s7.ru/" class="s7"></a></td>
+                    <td>A-319</td>
+                    <td>Москва/ДМД</td>
+                    <td><time datetime="2015-10-18T16:00:00Z">18 Окт 16:00</time></td>
+                    <td>6</td>
+                    <td>ожидание посадки</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>FZ-901</td>
+                    <td>Flydubai</td>
+                    <td><a href="http://www.flydubai.com/ru" class="flydubai"></a></td>
+                    <td>B-737</td>
+                    <td>Дубай</td>
+                    <td><time datetime="2015-10-18T12:30:00Z">18 Окт 12:30</time></td>
+                    <td>11</td>
+                    <td>летит</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>SU-5853</td>
+                    <td>Аэрофлот</td>
+                    <td><a href="http://www.aeroflot.ru/cms/" class="aeroflot"></a></td>
+                    <td>B-800W</td>
+                    <td>Симферополь</td>
+                    <td><time datetime="2015-10-18T11:35:00Z">18 Окт 11:35</time></td>
+                    <td>1</td>
+                    <td>приземлился</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>UN-2510</td>
+                    <td>Трансаэро</td>
+                    <td><a href="http://transaero.ru/ru/" class="transaero"></a></td>
+                    <td>B-700</td>
+                    <td>Сочи</td>
+                    <td><time datetime="2015-10-18T19:00:00Z">18 Окт 19:00</time></td>
+                    <td>4</td>
+                    <td>отменён</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>AL-5853</td>
+                    <td>Аэрофлот</td>
+                    <td><a href="http://www.aeroflot.ru/cms/" class="aeroflot"></a></td>
+                    <td>A-319</td>
+                    <td>Краснодар</td>
+                    <td><time datetime="2015-10-18T13:20:00Z">18 Окт 13:20</time></td>
+                    <td>7</td>
+                    <td>приземлился</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>BA-5464</td>
+                    <td>British Airways</td>
+                    <td><a href="www.britishairways.com/" class="britishairways"> </a></td>
+                    <td>A-210</td>
+                    <td>Сочи</td>
+                    <td><time datetime="2015-10-18T14:30:39Z">18 Окт 14:30</time></td>
+                    <td>12</td>
+                    <td>посадка закончена</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>Y7-67</td>
+                    <td>NordStar</td>
+                    <td><a href="http://nordstar.ru/" class="nordstar"> </a></td>
+                    <td>AT-45</td>
+                    <td>Омск</td>
+                    <td><time datetime="2015-10-18T13:10:39Z">18 Окт 13:10</time></td>
+                    <td>5</td>
+                    <td>задерживается до 15:00</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>S7-59</td>
+                    <td>Сибирь S7</td>
+                    <td><a href="http://www.s7.ru/" class="s7"></a></td>
+                    <td>A-319</td>
+                    <td>Москва/ДМД</td>
+                    <td><time datetime="2015-10-18T20:15:00Z">18 Окт 20:15</time></td>
+                    <td>2</td>
+                    <td>по расписанию</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>UN-2512</td>
+                    <td>Трансаэро</td>
+                    <td><a href="http://transaero.ru/ru/" class="transaero"></a></td>
+                    <td>B-800W</td>
+                    <td>Омск</td>
+                    <td><time datetime="2015-10-18T15:55:00Z">18 Окт 15:55</time></td>
+                    <td>3</td>
+                    <td>посадка закончена</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>P-251</td>
+                    <td>Трансаэро</td>
+                    <td><a href="http://transaero.ru/ru/" class="transaero"></a></td>
+                    <td>A-319</td>
+                    <td>Ларнака</td>
+                    <td><time datetime="2015-10-18T17:40:00Z">18 Окт 17:40</time></td>
+                    <td>3</td>
+                    <td>отменен</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>LJ7-67</td>
+                    <td>NordStar</td>
+                    <td><a href="http://nordstar.ru/" class="nordstar"> </a></td>
+                    <td>A-340</td>
+                    <td>Москва/ДМД</td>
+                    <td><time datetime="2015-10-18T18:15:39Z">18 Окт 18:15</time></td>
+                    <td>8</td>
+                    <td>вылетел</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>KZ-901</td>
+                    <td>Flydubai</td>
+                    <td><a href="http://www.flydubai.com/ru" class="flydubai"></a></td>
+                    <td>B-800W</td>
+                    <td>Дубай</td>
+                    <td><time datetime="2015-10-18T19:30:00Z">18 Окт 19:30</time></td>
+                    <td>10</td>
+                    <td>задерживается до 21:00</td>
+                </tr>
+                <tr>
+                    <td>Прилет</td>
+                    <td>S7-53</td>
+                    <td>Сибирь S7</td>
+                    <td><a href="http://www.s7.ru/" class="s7"></a></td>
+                    <td>A-319</td>
+                    <td>Москва/ШРМ</td>
+                    <td><time datetime="2015-10-18T21:15:00Z">18 Окт 21:15</time></td>
+                    <td>13</td>
+                    <td>по расписанию</td>
+                </tr>
+                <tr>
+                    <td>Вылет</td>
+                    <td>SU-59</td>
+                    <td>Аэрофлот</td>
+                    <td><a href="http://www.aeroflot.ru/cms/" class="aeroflot"></a></td>
+                    <td>B-800W</td>
+                    <td>Сочи</td>
+                    <td><time datetime="2015-10-18T17:35:00Z">18 Окт 17:35</time></td>
+                    <td>2</td>
+                    <td>регистрация</td>
+                </tr>
+            </tbody>
+        </table>
+        <form class="personal-data">
+            <h1>«Отправить данные о рейсе на телефон»</h1>
+            <label for="phone">Введите номер телефона</label><br>
+            <input name="phone" type="tel" required><br>
+            <label for="e-mail">Введите e-mail</label><br>
+            <input name="e-mail" type="email" required><br>
+            <input type="submit" value="Отправить">
+        </form>
     </body>
 </html>
