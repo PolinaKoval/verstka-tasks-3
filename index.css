@@ -1,0 +1,163 @@
+a.britishairways 
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/59.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+a.s7
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/390.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+a.flydubai
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/2051.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+a.aeroflot
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/397.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+a.transaero
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/429.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+a.nordstar
+{
+	background-image: url(http://www.koltsovo.ru/attels/logo4site/408.gif);
+	display:block;
+	height: 30px;
+	width:110px;
+	border: 1px solid #6E6E6E;
+}
+
+.schedule
+{
+	color: #051f34;
+	border-spacing: 0;
+	border: 1px solid #051f34;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.schedule thead tr
+{
+	background: #01a9c1;
+}
+/*
+tr:nth-child(odd)
+{
+	background: #bad6db;
+}
+
+tr:nth-child(even)
+{
+	background: #f4f5f5;
+} это была нормальная раскраска всего, но с ней не работает выделение*/
+
+tr:nth-child(even) td:after
+{
+	content: "";
+	background: #f4f5f5;
+	height: 100%;
+	position: absolute;
+  	left: 0;
+  	top: 0px;
+  	width: 100%;
+  	z-index: -3;
+}
+
+tr:nth-child(odd) td:after
+{
+	content: "";
+	background: #bad6db;
+	height: 100%;
+	position: absolute;
+  	left: 0;
+  	top: 0px;
+  	width: 100%;
+  	z-index: -3;
+}
+
+.schedule tr:hover
+{
+	background: #027495;
+}
+
+.schedule td,
+.schedule  th
+{
+  border: 1px solid #051f34;
+  position: relative;
+  padding: 5px;
+}
+
+.schedule td:hover::after,
+.schedule th:hover::after
+{
+  content: "";
+  position: absolute;
+  background: #027495; 
+  left: 0;
+  top:-5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
+}
+
+input
+{
+	width: 300px;
+	height: 30px;
+	margin-bottom: 8px;
+	font-size: 20px;
+}
+
+input[type="tel"]:valid,
+input[type="email"]:valid
+{
+	background: #98fb98; 
+}
+
+input[type="tel"]:invalid,
+input[type="email"]:invalid
+{
+	background: #fdd;
+}
+
+.personal-data
+{
+	border: 1px solid #027495;
+	width: 400px;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 30px;
+	text-align: center;
+	background: #f4f5f5;
+}
+
+.personal-data h1
+{
+	margin: 5px;
+}
