@@ -56,10 +56,10 @@ tr:nth-child(even) td:after
     background: #f4f5f5;
     height: 100%;
     position: absolute;
-      left: 0;
-      top: 0px;
-      width: 100%;
-      z-index: -3;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -3;
 }
 
 tr:nth-child(odd) td:after
@@ -68,10 +68,10 @@ tr:nth-child(odd) td:after
     background: #bad6db;
     height: 100%;
     position: absolute;
-      left: 0;
-      top: 0px;
-      width: 100%;
-      z-index: -3;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    z-index: -3;
 }
 
 .schedule tr:hover
@@ -82,22 +82,22 @@ tr:nth-child(odd) td:after
 .schedule td,
 .schedule  th
 {
-  border: 1px solid #051f34;
-  position: relative;
-  padding: 5px;
+    border: 1px solid #051f34;
+    position: relative;
+    padding: 5px;
 }
 
 .schedule td:hover::after,
 .schedule th:hover::after
 {
-  content: "";
-  position: absolute;
-  background: #027495; 
-  left: 0;
-  top: -5000px;
-  height: 10000px;
-  width: 100%;
-  z-index: -1;
+    content: "";
+    position: absolute;
+    background: #027495; 
+    left: 0;
+    top: -5000px;
+    height: 10000px;
+    width: 100%;
+    z-index: -1;
 }
 
 input
