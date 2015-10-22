@@ -56,10 +56,10 @@ tr:nth-child(even) td:after
     background: #f4f5f5;
     height: 100%;
     position: absolute;
-    left: 0;
-    top: 0px;
-    width: 100%;
-    z-index: -3;
+      left: 0;
+      top: 0px;
+      width: 100%;
+      z-index: -3;
 }
 
 tr:nth-child(odd) td:after
@@ -82,25 +82,33 @@ tr:nth-child(odd) td:after
 .schedule td,
 .schedule  th
 {
-    border: 1px solid #051f34;
-    position: relative;
-    padding: 5px;
+  border: 1px solid #051f34;
+  position: relative;
+  padding: 5px;
 }
 
 .schedule td:hover::after,
 .schedule th:hover::after
 {
-    content: "";
-    position: absolute;
-    background: #027495; 
-    left: 0;
-    top: -5000px;
-    height: 10000px;
-    width: 100%;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: #027495; 
+  left: 0;
+  top: -5000px;
+  height: 10000px;
+  width: 100%;
+  z-index: -1;
 }
 
-input
+.filter {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #051f34;
+    background: #f4f5f5;
+    color: #051f34;
+}
+/*Форма персональных данных*/
+.personal-data input
 {
     width: 300px;
     height: 30px;
@@ -108,14 +116,14 @@ input
     font-size: 20px;
 }
 
-input[type="tel"]:valid,
-input[type="email"]:valid
+.personal-data input[type="tel"]:valid,
+.personal-data input[type="email"]:valid
 {
     background: #98fb98; 
 }
 
-input[type="tel"]:invalid:focus,
-input[type="email"]:invalid:focus
+.personal-data input[type="tel"]:invalid:focus,
+.personal-data input[type="email"]:invalid:focus
 {
     background: #fdd;
 }
@@ -134,4 +142,96 @@ input[type="email"]:invalid:focus
 .personal-data h1
 {
     margin: 5px;
+}
+
+/*Фильтрация по городам*/
+.cityInput
+{
+	margin: 10px;
+}
+.cityInput[value=""] ~ table tr
+{
+	display: table-row;
+}
+
+.cityInput[value="Баку"] ~ table tbody tr:not([data-city ="Баку"])
+{
+	display: none;
+}
+
+.cityInput[value="Симферополь"] ~ table tbody tr:not([data-city ="Симферополь"])
+{
+	display: none;
+}
+
+.cityInput[value="Москва"] ~ table tbody tr:not([data-city ="Москва"])
+{
+	display: none;
+}
+
+.cityInput[value="Дубай"] ~ table tbody tr:not([data-city ="Дубай"])
+{
+	display: none;
+}
+
+.cityInput[value="Сочи"] ~ table tbody tr:not([data-city ="Сочи"])
+{
+	display: none;
+}
+
+.cityInput[value="Краснодар"] ~ table tbody tr:not([data-city ="Краснодар"])
+{
+	display: none;
+}
+
+.cityInput[value="Омск"] ~ table tbody tr:not([data-city ="Омск"])
+{
+	display: none;
+}
+
+.cityInput[value="Ларнака"] ~ table tbody tr:not([data-city ="Ларнака"])
+{
+	display: none;
+}
+
+/*Фильтрация по типу*/
+.flightType[data-selected = "Off"] ~ table tbody tr:not([data-type ="Off"])
+{
+	display: none;
+}
+
+.flightType[data-selected = "On"] ~ table tbody tr:not([data-type ="On"])
+{
+	display: none;
+}
+
+/*Фильтрация по терминалу*/
+.terminal[data-selected ="1"] ~ table tbody tr:not([data-terminal ="1"])
+{
+	display: none;
+}
+
+.terminal[data-selected ="2"] ~ table tbody tr:not([data-terminal ="2"])
+{
+	display: none;
+}
+
+.terminal[data-selected ="3"] ~ table tbody tr:not([data-terminal ="3"])
+{
+	display: none;
+}
+
+.terminal[data-selected ="4"] ~ table tbody tr:not([data-terminal ="4"])
+{
+	display: none;
+}
+
+.terminal[data-selected ="5"] ~ table tbody tr:not([data-terminal ="5"])
+{
+	display: none;
+}
+
+.terminal[data-selected ="6"] ~ table tbody tr:not([data-terminal ="6"])
+{
+	display: none;
 }
