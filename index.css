@@ -128,6 +128,16 @@ tr:nth-child(odd) td:after
     background: #fdd;
 }
 
+input[type ="submit"]
+{
+    display: none;
+}
+
+input[type="tel"]:valid ~ input[type="email"]:valid ~ input[type="submit"]
+{
+    display: inline;
+}
+
 .personal-data
 {
     border: 1px solid #027495;
@@ -137,6 +147,7 @@ tr:nth-child(odd) td:after
     margin-top: 30px;
     text-align: center;
     background: #f4f5f5;
+    height: 250px;
 }
 
 .personal-data h1
